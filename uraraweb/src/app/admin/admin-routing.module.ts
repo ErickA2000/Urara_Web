@@ -3,14 +3,16 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { AgregarComponent } from './component/agregar/agregar.component';
 
 const routes: Routes = [
   {
     path: '',
+    component: DashboardComponent,
     children: [
       
       {
-        path: 'inicio', component: DashboardComponent
+        path: 'agregar', component: AgregarComponent
       },
       {
         path: '**', redirectTo: 'inicio'
