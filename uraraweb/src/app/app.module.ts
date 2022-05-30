@@ -5,10 +5,9 @@ import { AppComponent } from './app.component';
 
 //modulos internos
 import { AppRoutingModule } from './app-routing.module';
-import { HomeModule } from './home/home.module';
 import { SharedModule } from './shared/shared.module';
-import { CatalogoModule } from './catalogo/catalogo.module';
-import { AdminModule } from './admin/admin.module';
+import { HomeModule } from './home/home.module';
+
 
 
 @NgModule({
@@ -18,10 +17,9 @@ import { AdminModule } from './admin/admin.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeModule,
     SharedModule,
-    CatalogoModule,
-    AdminModule
+    HomeModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
