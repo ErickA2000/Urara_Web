@@ -4,13 +4,16 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { AgregarComponent } from './component/agregar/agregar.component';
+import { InventarioComponent } from './component/inventario/inventario.component';
 
 const routes: Routes = [
   {
     path: '',
     component: DashboardComponent,
     children: [
-      
+      {
+        path: 'inventario', component: InventarioComponent
+      },
       {
         path: 'agregar', component: AgregarComponent
       },

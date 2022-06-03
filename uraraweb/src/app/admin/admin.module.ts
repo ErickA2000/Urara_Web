@@ -5,13 +5,15 @@ import { AdminRoutingModule } from './admin-routing.module';
 
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { AgregarComponent } from './component/agregar/agregar.component';
+import { InventarioComponent } from './component/inventario/inventario.component';
 
 
 
 @NgModule({
   declarations: [
     DashboardComponent,
-    AgregarComponent
+    AgregarComponent,
+    InventarioComponent
   ],
   imports: [
     CommonModule,
