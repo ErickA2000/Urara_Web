@@ -18,10 +18,13 @@ const routes: Routes = [
   },
   {
     path: '404', component: Error404Component
+  },
+  {
+    path: '', pathMatch: 'full', redirectTo: '/inicio'
+  },
+  {
+    path: '**', pathMatch: 'full', redirectTo: '404'
   }
-  // {
-  //   path: '**', pathMatch: 'full', redirectTo: '404'
-  // }
 ];
 
 @NgModule({

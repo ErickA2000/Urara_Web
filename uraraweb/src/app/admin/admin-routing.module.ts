@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { AgregarComponent } from './component/agregar/agregar.component';
 import { InventarioComponent } from './component/inventario/inventario.component';
+import { TablaComponent } from './component/tabla/tabla.component';
 
 const routes: Routes = [
   {
@@ -12,14 +13,26 @@ const routes: Routes = [
     component: DashboardComponent,
     children: [
       {
-        path: 'inventario', component: InventarioComponent
-      },
-      {
-        path: 'agregar', component: AgregarComponent
-      },
-      {
-        path: '**', redirectTo: 'inicio'
+        path: 'inventario', component: InventarioComponent,
+        children: [
+          {
+            path: '', component: TablaComponent
+          },
+          {
+            path: 'productos/agregar', component: AgregarComponent
+          },          
+          {
+            path: '**', redirectTo: '', pathMatch: 'full'
+          }
+        ]
       }
+      // {
+      //   path: 'agregar', component: AgregarComponent
+      // },
+      // {
+      //   path: '**', pathMatch: 'full', redirectTo: '/404'
+      // }
+    
     ]
   }
 ]

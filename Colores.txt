@@ -1,0 +1,23 @@
+azul claro -> #00cabe
+
+fucsia -> #fd62e4
+
+para el fondo
+
+rosa pastel -> FFCFC7 opacidad del 100%
+fucsia-> FD62E4 con una opacidad del 63%
+
+
+paginas
+
+admin -> agregar, panel
+
+auth -> login
+
+catalogo -> productos, detalles
+
+principal -> inicio
+
+error404 - error de ruta
+
+about
