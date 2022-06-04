@@ -1,11 +1,21 @@
 header{
-    background-color: #00cabe;
     padding: 1rem;
 }
+
 
 .barra{
     display: flex;
     justify-content: space-between;
-    height: 2rem;
     align-items: center;
+    height: 4rem;
+}
+
+.search{
+    cursor: pointer;
+    color: white;
+}
+
+.menu{
+    cursor: pointer;
+    color: white;
 }

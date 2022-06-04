@@ -1,9 +1,25 @@
 <header >
-    <div class="container barra">
-        <p >barra</p>
-        <p>logo</p>
-        <p>lupa</p>
-    </div>
+
+    <mat-drawer-container fullscreen>
+        <mat-sidenav #sidenav>
+            <h2>Menu</h2>
+        </mat-sidenav>
+
+        <div style="background-color: #00cabe;">
+            <div class=" container barra">
+                <a class="menu" (click)="sidenav.toggle()"><mat-icon >menu</mat-icon></a>
+                <h1>URARA</h1>
+                <a class="search"><mat-icon >search</mat-icon></a>
+            
+            </div>
+        </div>
+        
+
+    </mat-drawer-container>
+
+    
     
 </header>
 
+
+  
