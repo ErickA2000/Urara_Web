@@ -4,6 +4,8 @@ import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { Error404Component } from './component/error404/error404.component';
 import { MaterialModule } from '../material/material.module';
+import { AppRoutingModule } from '../app-routing.module';
+
 
 
 
@@ -15,7 +17,8 @@ import { MaterialModule } from '../material/material.module';
   ],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    AppRoutingModule
   ],
   exports: [
     HeaderComponent,
