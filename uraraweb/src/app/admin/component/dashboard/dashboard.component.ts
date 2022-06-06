@@ -22,9 +22,6 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  cambiarRuta(){
-    this.router.navigate(['/inventario']);
-  }
 
   ngAfterViewInit() {
     this.observer

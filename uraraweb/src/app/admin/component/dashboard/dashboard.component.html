@@ -1,6 +1,6 @@
 <section>
     
-    <!-- <mat-toolbar class="mat-elevation-z8" left>
+    <mat-toolbar class="mat-elevation-z8" left>
         <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
             <mat-icon *ngIf="!sidenav.opened"> menu </mat-icon>
             <mat-icon *ngIf="sidenav.opened"> close </mat-icon>
@@ -16,12 +16,12 @@
       
           <mat-divider></mat-divider>
       
-          <button mat-button class="menu-button" routerLink="/inventario">
+          <button mat-button class="menu-button" routerLink="home">
             <mat-icon>home</mat-icon>
             <span>Inicio</span>
           </button>
-          <button mat-button class="menu-button" (click)="cambiarRuta()">
-            <mat-icon>person</mat-icon>
+          <button mat-button class="menu-button" routerLink="inventario">
+            <mat-icon>inventory</mat-icon>
             <span>Inventario</span>
           </button>
           <button mat-button class="menu-button" routerLink="/about">
@@ -41,9 +41,8 @@
             <router-outlet></router-outlet>
           </div>
         </mat-sidenav-content>
-      </mat-sidenav-container> -->
+      </mat-sidenav-container>
 
-<a routerLink="/inventario">inve</a>
-<router-outlet></router-outlet>
+
 </section>
 
