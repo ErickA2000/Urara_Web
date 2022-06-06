@@ -6,12 +6,16 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { AgregarComponent } from './component/agregar/agregar.component';
 import { InventarioComponent } from './component/inventario/inventario.component';
 import { TablaComponent } from './component/tabla/tabla.component';
+import { InicioComponent } from './component/inicio/inicio.component';
 
 const routes: Routes = [
   {
     path: '',
     component: DashboardComponent,
     children: [
+      {
+        path: 'home', component: InicioComponent
+      },
       {
         path: 'inventario', component: InventarioComponent,
         children: [
