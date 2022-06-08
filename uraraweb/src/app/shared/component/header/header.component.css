@@ -2,6 +2,15 @@ header{
     padding: 1rem;
 }
 
+img{
+    width: 20%;
+}
+
+@media (max-width: 800px) {
+    img{
+        width: 30%;
+    }
+}
 
 .barra{
     display: flex;
