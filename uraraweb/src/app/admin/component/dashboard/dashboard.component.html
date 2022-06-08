@@ -20,10 +20,18 @@
             <mat-icon>home</mat-icon>
             <span>Inicio</span>
           </button>
-          <button mat-button class="menu-button" routerLink="inventario">
+
+
+          <button mat-button class="menu-button" [matMenuTriggerFor]="menu">
             <mat-icon>inventory</mat-icon>
             <span>Inventario</span>
           </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="inventario"> <mat-icon>inventory</mat-icon> Articulos</button>
+            <button mat-menu-item> <mat-icon>category</mat-icon> Categoria</button>
+          </mat-menu>
+
+
           <button mat-button class="menu-button" routerLink="/about">
             <mat-icon>info</mat-icon>
             <span>About</span>
