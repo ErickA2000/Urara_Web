@@ -3,7 +3,6 @@
 <div class="contenedor">
     <div class="form">
         <form>
-
             <div class="form-inputs">
                 <mat-form-field appearance="fill" class=" form-input">
                     <mat-label>Nombre</mat-label>
@@ -50,6 +49,15 @@
 
         </form>
     </div>
+    <div class="botones">
+        <button mat-button class="btn-guardar">
+            <mat-icon>save</mat-icon> 
+            Guardar
+        </button>
 
+        <button mat-button class="btn-cancelar" (click)="goBack()">
+            <mat-icon>cancel</mat-icon> 
+            Cancelar
+        </button>
+    </div>
 </div>
-<a (click)="goBack()">volver</a>

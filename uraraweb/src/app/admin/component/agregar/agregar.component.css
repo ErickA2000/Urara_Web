@@ -30,3 +30,25 @@ form .form-inputs .form-input{
     }
 
 }
+
+.botones{
+    display: flex;
+    justify-content: right;
+}
+
+.btn-guardar{
+    background-color: rgb(7, 206, 7);
+}
+
+.btn-guardar:hover{
+    background-color: green;
+}
+
+.btn-cancelar{
+    background-color: red;
+    margin-left: 1rem;
+}
+
+.btn-cancelar:hover{
+    background-color: rgb(199, 4, 4);
+}
