@@ -1,0 +1,32 @@
+.contenedor{
+    width: 100%;
+}
+
+.form form .form-inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+  
+form .form-inputs .form-input{
+    margin-bottom: 15px;
+    width: calc(100% / 3 - 20px);
+}
+
+.form-inputs .form-input input{
+    width: 100%;
+}
+
+
+@media ( max-width: 584px) {
+    .contenedor{
+        max-width: 100%;
+    }
+
+    form .form-inputs .form-input{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+}

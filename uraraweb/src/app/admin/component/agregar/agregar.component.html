@@ -1,3 +1,55 @@
-<p>agregar works!</p>
+<h2>Articulo</h2>
 
+<div class="contenedor">
+    <div class="form">
+        <form>
+
+            <div class="form-inputs">
+                <mat-form-field appearance="fill" class=" form-input">
+                    <mat-label>Nombre</mat-label>
+                    <input type="text" matInput placeholder="Nombre">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class=" form-input">
+                    <mat-label>Referencia</mat-label>
+                    <input type="text" matInput placeholder="Referencia">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="form-input">
+                    <mat-label>Imagen</mat-label>
+                    <input type="text" matInput placeholder="Imagen">
+                </mat-form-field>
+
+                <mat-form-field class="form-input" appearance="fill">
+                    <mat-label>Descripción</mat-label>
+                    <textarea matInput placeholder="..."></textarea>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="form-input">
+                    <mat-label>Cantidad</mat-label>
+                    <input type="text" matInput placeholder="Cantidad">
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="form-input">
+                    <mat-label>Categoria</mat-label>
+                    <mat-select>
+                        <mat-option value="option">Option</mat-option>
+                    </mat-select>
+                    <mat-hint align="end"></mat-hint>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill" class="form-input">
+                    <mat-label>Colección</mat-label>
+                    <mat-select>
+                        <mat-option value="option">Option</mat-option>
+                    </mat-select>
+                    <mat-hint align="end"></mat-hint>
+                </mat-form-field>
+
+            </div>
+
+        </form>
+    </div>
+
+</div>
 <a (click)="goBack()">volver</a>

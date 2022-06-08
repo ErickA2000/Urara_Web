@@ -1,6 +1,12 @@
+<div class="contenedor">
+    <h2>Articulos</h2>
+    <button mat-button routerLink="productos/agregar" class="boton"> <mat-icon>add</mat-icon> Agregar</button>
+</div>
+
+
 <mat-form-field appearance="standard">
-    <mat-label>Filter</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+    <mat-label>Referencia</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ejem. 0920" #input>
 </mat-form-field>
 
 <div class="mat-elevation-z8">
