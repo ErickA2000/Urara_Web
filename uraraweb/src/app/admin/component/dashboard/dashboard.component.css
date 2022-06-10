@@ -5,7 +5,7 @@
 }
 
 mat-toolbar {
-    background: #F40ACF;
+    background: linear-gradient(45deg, #FFCFC7, #FD62E4);
     color: black;
 }
 
