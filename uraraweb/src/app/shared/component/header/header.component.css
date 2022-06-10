@@ -4,6 +4,7 @@ header{
 
 img{
     width: 20%;
+    cursor: pointer;
 }
 
 @media (max-width: 800px) {
