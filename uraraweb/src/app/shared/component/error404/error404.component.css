@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-  width:100vw;
+  width:100vh;
   height:100vh;
   display: flex;
   justify-content: center;
@@ -23,6 +23,7 @@ body{
   position: relative;
   left:6vmin;
   text-align: center;
+  margin: auto;
 }
 
 .cog-wheel1, .cog-wheel2{
