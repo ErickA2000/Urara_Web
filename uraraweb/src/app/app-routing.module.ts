@@ -9,6 +9,10 @@ const routes: Routes = [
     path: 'inicio', component: InicioComponent
   },
   {
+    path: 'catalogo',
+    loadChildren: () => import('./catalogo/catalogo.module').then( m => m.CatalogoModule )
+  },
+  {
     path: 'panel', 
     loadChildren: () => import('./admin/admin.module').then( m => m.AdminModule )
   },
