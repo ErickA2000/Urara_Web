@@ -1,9 +1,24 @@
 <header >
 
     <mat-sidenav-container fullscreen>
-        <mat-sidenav #sidenav class="sidenav-color">
+        <mat-sidenav #sidenav class="sidenav">
             <h2>Menu</h2>
             
+            <div class="sidenav_nav">
+                <ul class="nav_list">
+                    <li class="nav_lisy-item">
+                        <button mat-button class="nav_lisy-item-boton" routerLink="inicio">
+                            Inicio
+                        </button>
+                    </li>
+                    <li class="nav_lisy-item">
+                        <button mat-button class="nav_lisy-item-boton" routerLink="catalogo">
+                            Categoria
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
         </mat-sidenav> 
 
         <div class="toolbar">

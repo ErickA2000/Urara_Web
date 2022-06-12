@@ -34,6 +34,28 @@ img{
     color: white;
 }
 
-.sidenav-color{
+.sidenav{
     background-image: linear-gradient(#00cabe, #fd62e4);
+    min-width: 10rem;
+}
+
+.sidenav h2{
+    text-align: center;
+}
+
+.nav_list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: initial;
+    gap: 1rem;
+}
+
+.nav_lisy-item-boton{
+    background: #e759d0;
+}
+
+.nav_lisy-item-boton:hover{
+    background: #fd62e4;
 }
